@@ -1,6 +1,7 @@
 // 1
 
 import ApiTesting from "./ApiTesting";
+import ListApi from "./ListApi";
 
 function Home() {
 
@@ -16,6 +17,7 @@ function Home() {
                 fruits.map(fruit => { return <h1>{fruit}</h1> })
             }
             <ApiTesting/>
+            <ListApi/>
 
         </>
     )
