@@ -1,17 +1,22 @@
 // 1
 
-function Home () {
+import ApiTesting from "./ApiTesting";
 
-    function test(){
+function Home() {
+
+    function test() {
         return "Test Function";
     }
-    const fruits=["Apple","Mango","Pinapple"]
-    return(
+    const fruits = ["Apple", "Mango", "Pinapple"]
+    return (
         <>
-        <h1>Home</h1>
-        {
-            fruits.map(fruit=>{return <h1>{fruit}</h1>})
-        }
+
+            <h1>Home</h1>
+            {
+                fruits.map(fruit => { return <h1>{fruit}</h1> })
+            }
+            <ApiTesting/>
+
         </>
     )
 }
