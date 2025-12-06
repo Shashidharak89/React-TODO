@@ -1,0 +1,16 @@
+.list-container{
+    display: flex;
+    justify-content: center;
+}
+.List-response{
+border:2px solid black;
+   color: blue;
+   width: 80%;
+   display: grid;
+   margin: 5px;
+}
+.List-response ul li {
+    border: 2px solid rgb(206, 191, 191);
+    margin: 3px;
+    padding: 3px;
+}
