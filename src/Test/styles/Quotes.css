@@ -1,0 +1,20 @@
+.quote-id {
+    border: 1px solid black;
+    color: blueviolet;
+    border-radius: 5px;
+    margin: 12px;
+}
+.advice{
+    border:1px solid black;
+    font-size: 25px;
+    color: brown;
+    border-radius: 10px;
+}
+.quote-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.quote-container div{
+    width: 80%;
+}

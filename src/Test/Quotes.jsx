@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import './styles/Quotes.css';
 
 const Quotes = () => {
     const [res, setRes] = useState([]);
@@ -12,7 +13,7 @@ const Quotes = () => {
             } catch (error) {
                 console.log(error);
             }
-            
+
         };
         getQuotes();
     }, [])
@@ -21,15 +22,16 @@ const Quotes = () => {
         <div>
             <h1>Quotes</h1>
             {
-                res.length==0?"Not found":<div>
-                    <h1>{
-                      res.slip.id
+                res.length == 0 ? "Not found" : <div className="quote-container"><div >
+                    <p className="quote-id">{
+                        res.slip.id
                     }
-                    </h1>
-                    <h1>{
-                      res.slip.advice
+                    </p>
+                    <p className="advice">{
+                        res.slip.advice
                     }
-                    </h1>
+                    </p>
+                </div>
                 </div>
 
             }
